@@ -1151,6 +1151,48 @@ footer .active3:hover {
 } 
 
 
+@media (max-width:400px){ 
+
+    #hero {
+     width: 100vw;
+     height: 107h;
+    }
+
+    #hero .arrow {
+        display: none;
+       }
+    
+    #hero .text .animation {
+     font-size: 2rem;
+    }
+
+    #hero .text h1 {
+        font-size: 1.7rem;
+    }
+    
+    #hero .container img {
+     height: 235px;
+     margin-top: 5rem;   
+    } 
+ 
+    #hero .botones .boton2 {
+     width: 50%
+    }
+ 
+    #aboutme .aboutme-body .presentacion p {
+     margin: 0 auto;
+ 
+    }
+ 
+    #curriculum .contenedor h5 { 
+     width: 100%;
+ }
+ 
+ 
+ 
+ } 
+
+
 /*********************************************************************************/
 /***************************By E.M ***********************************************/
 /*********************************************************************************/
