@@ -139,7 +139,7 @@ a {
     box-shadow: 0px 3px 0px 20px #fff inset;
     background-color: #fff;
     /* filter:grayscale(.9); */
-    filter: brightness(1.23);
+    filter: contrast(1.27) saturate(1.7);
 }
 
    
@@ -465,10 +465,10 @@ a {
 
 #curriculum .contenedor .span2{
     margin-top: 15px;
-    color: #fff;
+    color: rgba(12, 11, 11, 0.793);
     font-size: 14px;
     line-height: 22px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 
@@ -792,6 +792,18 @@ footer .active2 {
     color: #F5DF4E;
 }
 
+footer .active3 {
+    color: #fcffff;
+    text-decoration:none;
+    text-transform: none;
+   
+}
+
+footer .active3:hover {
+    color: #F5DF4E;
+    text-decoration:underline;
+}
+
 
 
 
@@ -856,8 +868,8 @@ footer .active2 {
     }
     
     #hero .container img {
-        height: 450px;
-        margin-top: 35px;
+        height: 410px;
+        margin-top: 50px;
     }
 
     #aboutme {
@@ -1026,6 +1038,11 @@ footer .active2 {
     height: 100vh;
 }
 
+#hero .container img {
+    height: 315px;
+    margin-top: 50px;   
+   } 
+
   .aboutme-header {
     margin-top: 100px;
 }
@@ -1085,6 +1102,14 @@ footer .active2 {
     width: 90%;
   }
 
+  #contacto .text-form .redes a{
+   padding: 20px;
+   font-size: 1.6rem;
+   text-align: center;}
+
+   
+
+
   #aboutme {
     height: 50%;
   }
@@ -1096,6 +1121,7 @@ footer .active2 {
 
    #hero {
     width: 100vw;
+    height: 107vh;
    }
 
    #hero .text .animation {
@@ -1103,8 +1129,8 @@ footer .active2 {
    }
    
    #hero .container img {
-    height: 330px;
-    margin-top: 50px;   
+    height: 315px;
+    margin-top: 40px;   
    } 
 
    #hero .botones .boton2 {
