@@ -26,49 +26,81 @@
             
             <a class="logo" href="index.html"><i class="fa-solid fa-briefcase"></i><span class="active">ESTEBAN </span  class="active">MARTINS</span></a>
             <div class="navbar">
-            <ul>
+               
+            <ul class="menu">
                 <li><a href="#hero">Inicio</a></li>
                 <li><a href="#aboutme">Quien soy</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#ancla-curriculum">Curriculum</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#ancla-portfolio">Portfolio</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
-            </div>
-
+           
+        </div>
             <div class="social">
               
                 <i class="fa-solid fa-bars menubars"></i>
-              
+                <i class="fa-solid fa-xmark cerrar"></i>
                 <a href="https://github.com/estebanmartins" target="_blank"><i class="fa-brands fa-github github"></i></a>
                 <a href="https://wa.me/5493513111452" target="_blank"> <i class="fa-brands fa-whatsapp wsp"></i></a>
                 <i class="fa-brands fa-instagram ig"></i>
                 <a  href="mailto:estebanmartins25@gmail.com" target="_blank"><i class="fa-solid fa-envelope mail"></i></a>
+               
             
             </div>
+           
+       
+            <!-- <a href="#" id="darkmode"><i class="fa-solid fa-moon"></i></a> -->
+            
        </div>
+      
     </header>
 
 
  <!------------------ SECCIÓN HERO ---------------------->
  <!------------------------------------------------------>
 
-<Section id="hero">
-    <div class="container">
-         <div class="text">
+<Section id="hero"  class="night">
+    <div class="menu-responsive">
+        <ul class="menu-desplegable">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#aboutme">Quien soy</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#ancla-curriculum">Curriculum</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <div class="social">
+              
+            
+            <i class="fa-solid fa-xmark cerrar"></i>
+            <a href="https://github.com/estebanmartins" target="_blank"><i class="fa-brands fa-github github"></i></a>
+            <a href="https://wa.me/5493513111452" target="_blank"> <i class="fa-brands fa-whatsapp wsp"></i></a>
+            <i class="fa-brands fa-instagram ig"></i>
+            <a  href="mailto:estebanmartins25@gmail.com" target="_blank"><i class="fa-solid fa-envelope mail"></i></a>
+           
+        
+        </div>
+
+       
+
+    </div>
+    <div class="container"  class="night">
+         <div class="text"  >
               <h1>Hola, soy Esteban Martins</h1>
               <h2 class="animation">Desarrollador Web</h2>
               <p>Viviendo en Córdoba, Capital.</p>
           <div class="botones">
               <button class="boton"><a href="#portfolio">Mirar mis trabajos</a></button>
-             <button class="boton2"><a href="#contacto">Contactame <i class="fa-regular fa-circle-down"></i></a> </button>
+             <button class="boton2"  class="night"><a href="#contacto">Contactame <i class="fa-regular fa-circle-down"></i></a> </button>
          </div>
       </div>
 
         <img src="img/perfil3.png" alt="foto perfil">
     </div>
 
-    <div class="arrow"><a href="#aboutme">
+    <div class="arrow"  class="night"><a href="#aboutme">
         <i class="fa-solid fa-arrow-down"></a></i>
         </div>
 </Section>
@@ -79,7 +111,7 @@
  <!------------------------------------------------------>
 
 
-<section id="aboutme">
+<section id="aboutme"  class="night">
       <div class="aboutme-header">
         <span class="head-title">Quien soy</span>
         <h3 class="title">Acerca de mí</h3>
@@ -291,7 +323,7 @@
 </div>
  
     <div class="aboutme-header">
-        <span class="head-title">Portfolio</span>
+        <span class="head-title"  id="ancla-portfolio">Portfolio</span>
         <h3 class="title">Mis Proyectos</h3>
         </div>
 
@@ -369,6 +401,8 @@
 <!-- END WRAPPER -->
 
 
+
 <script src="https://kit.fontawesome.com/e1b028532b.js" crossorigin="anonymous"></script>
+<script src="app.js"></script>
 </body>
 </html>

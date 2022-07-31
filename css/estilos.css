@@ -14,6 +14,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x:hidden;
+   
 }
 
 
@@ -61,11 +62,15 @@ a {
    padding: 25px;
 }
    
-
-#header .navbar a {
+#header .navbar {
+    display: flex;
+   
+}
+#header .navbar .menu a {
     padding-left: 15px;
     font-weight: bold;
     border-bottom: 3px solid #f3f9ff;
+    
 }
 
 
@@ -89,6 +94,7 @@ a {
 
 
 #header .social i{
+    
     font-size:1.5rem;
     padding-right: 5px;
     color: #212529cc;
@@ -109,6 +115,71 @@ a {
     padding:5px;
     color:#616262;
     font-weight: bold;
+}
+
+
+
+
+ /******* MENU HAMBURGUESA ******/
+
+#hero .menu-responsive {
+    position: fixed;
+    top:78px;
+    z-index:100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f9ff;
+    width: 100vw;
+    padding-top:3rem;
+    display:none;
+    
+    
+}
+
+#hero .menu-responsive .menu-desplegable {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.menu-desplegable li  {
+    height: 5rem;
+}
+
+.menu-desplegable li a:hover {
+    font-size:1.2rem;
+    transition: 0.8;
+    border-bottom: 2px solid #F5DF4E;
+}
+
+
+.social .cerrar {
+    display: none;
+}
+
+#hero .menu-responsive  .social {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding-bottom: 1.5rem;
+    height:3.2rem;
+  
+    text-align: center;
+    
+}
+
+
+#hero .menu-responsive .social i {
+    padding-left:15px;
+    font-size: 1rem;
+    
+}
+#hero .menu-responsive .social i:hover {
+    font-size: 1.2rem;
+    color: #000000;
 }
 
 
@@ -138,11 +209,9 @@ a {
     padding:20px;
     box-shadow: 0px 3px 0px 20px #fff inset;
     background-color: #fff;
-    /* filter:grayscale(.9); */
     filter: contrast(1.27) saturate(1.7);
 }
 
-   
 .container .text {
     font-weight: bold;
     font-size: 2.1rem;
@@ -628,6 +697,8 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding:100px 200px 100px 200px;
+   
 }
 
 
@@ -812,11 +883,16 @@ footer .active3:hover {
 /*********************************************************************************/
 
 
+
+
+/******** FLECHA  ********/
+
 @keyframes bajar {
     0% {transform:translatey(0);}
     90%{transform: translatey(15px);}
 }
 
+/***** EFECTO MAQUINA ESCRIBIR ******/
 
 @Keyframes animation {
     from {width: 0;} 
@@ -837,25 +913,33 @@ footer .active3:hover {
 
 @media (max-width:988px)
 {   
-
-    #header {
-        height: 5rem;
+    body {
+        overflow-x: hidden;
     }
+    
 
-    #header .navbar ul {
+     #header .navbar ul {
         display: none;
 
-    }
-
-    #header .social .menubars {
+    } 
+    
+    #header .social .menubars{
         visibility: visible;
-        font-size: 2.5rem;
-        color: black;
     }
 
+    
+    #header .navbar .menu a {
+       
+        padding: 15px;
+    }
+    #header .navbar ul a:hover {
+        border-bottom:3px solid #090909;
+       
+        transition: .3s  ease-in;
+    }
     #header .social i{
       padding-right: 20px;
-
+      
     }
 
     #hero {
@@ -888,6 +972,7 @@ footer .active3:hover {
         flex-wrap: wrap;
         display: grid;
         padding-bottom: 20px;
+        text-align: center;
     }
 
     #aboutme .aboutme-body .presentacion h4 {
@@ -929,12 +1014,29 @@ footer .active3:hover {
      padding-top: 30px;
 }
 
+header .social .wsp{
+    display: none;
+}
+
+header .social  .ig{
+    display: none;
+}
+
+header .social .mail{
+    display: none;
+}
+
+header .social .github{
+    display: none;
+} 
 
 } 
 
 
  
 @media (max-width:768px){ 
+
+
     .aboutme-header {
         margin-top: 100px;
     }
@@ -950,26 +1052,6 @@ footer .active3:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    #hero .arrow {
-        /* display:none; */
-    }
-    
-    header .social .wsp{
-        display: none;
-    }
-
-    header .social  .ig{
-        display: none;
-    }
-
-    header .social .mail{
-        display: none;
-    }
-
-    header .social .github{
-        display: none;
     }
 
     header .container .logo{
@@ -1029,16 +1111,13 @@ footer .active3:hover {
 
 @media (max-width:577px)
 {   
-   #hero .arrow {
-    /* display: none; */
-   }
-
+  
    #hero {
     width: 100vw;
     height: 100vh;
 }
 
-#hero .container img {
+   #hero .container img {
     height: 315px;
     margin-top: 50px;   
    } 
@@ -1073,6 +1152,7 @@ footer .active3:hover {
 
 #hero .text h2 {
     font-size: 2.9rem;
+    text-align: center;
 }
 
 #hero img {
@@ -1106,9 +1186,6 @@ footer .active3:hover {
    padding: 20px;
    font-size: 1.6rem;
    text-align: center;}
-
-   
-
 
   #aboutme {
     height: 50%;
@@ -1152,10 +1229,12 @@ footer .active3:hover {
 
 
 @media (max-width:400px){ 
-
+    
+    
     #hero {
      width: 100vw;
      height: 107h;
+     
     }
 
     #hero .arrow {
