@@ -1,36 +1,27 @@
-// const modoNoche = document.getElementById("darkmode")
-// const hero = document.getElementById("hero")
-// const night = document.querySelectorAll(".night")
-
-// modoNoche.addEventListener("click",()=>{
-//     night.style.backgroundColor = "white"
-   
-
-// })
-
-// let btnModoOscuro = document.querySelector('.boton-mo')
-
 
 let botonMenuOpen = document.querySelector(".menubars")
 let botonMenuClose = document.querySelector(".cerrar")
 let menuCont = document.querySelector('.menu-responsive')
 let menuLista = document.querySelector('.menu-desplegable')
+let menuHover = document.querySelectorAll('.menu a')
+
+let btnModoOscuro = document.querySelector('#darkmode')
+
+
+let FondoAmarillo = document.querySelectorAll('.fondo-amarillo') 
+let FondoBlanco = document.querySelectorAll('.fondo-blanco')
+let navBar = document.querySelector('header')
 
 
 
-
-
-let seccAmarillas = document.querySelectorAll('.fon-amarillo') 
-let secBlancas = document.querySelectorAll('.fon-blanco')
-
-botonMenuOpen.addEventListener('click', e =>{
+botonMenuOpen.addEventListener('click', () =>{
     menuCont.style.display = 'block'
     botonMenuOpen.style.display = 'none'
     botonMenuClose.style.display = 'block'
     menuLista.style.display = 'flex'
 })
 
-botonMenuClose.addEventListener('click', e =>{
+botonMenuClose.addEventListener('click', () =>{
     botonMenuOpen.style.display = 'block'
     menuCont.style.display = 'none'
     botonMenuClose.style.display = 'none'
@@ -38,12 +29,21 @@ botonMenuClose.addEventListener('click', e =>{
 
 
 
-// btnModoOscuro.addEventListener('click', e =>{
-//     navBar.classList.toggle('nav-osc');
+btnModoOscuro.addEventListener('click', ()=>{
 
-//     secBlancas.forEach((item)=>{
-//         item.classList.toggle('fondo-negro');
-//     })
-// /*     seccAmarillas.classList.toggle('fondo-negro') */
-    
-// })
+    navBar.classList.toggle('header-osc');
+    FondoBlanco.forEach((item)=>{
+    item.classList.toggle('fondo-negro');
+       
+      
+    })
+    menuHover.forEach((item)=>{
+        item.classList.toggle('menu-osc');
+    })
+   
+
+   
+  
+
+  
+})
